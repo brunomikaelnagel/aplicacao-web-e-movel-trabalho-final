@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Contato</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar center-flex">
+            <a class="navbar-link navbar-home-link-wrapper" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+            </a>
+            <div class="navbar-links-wrapper">
+                <a class="navbar-link" href="./contact.html">Contato</a>
+                <a class="navbar-link" href="./portfolio.html">Portifólio</a>
+                <a class="navbar-link" href="./training.html">Formação</a>
+                <a class="navbar-link" href="./about-me.html">Sobre</a>
+            </div>
+        </nav>
+        <main class="page-content center-flex">
+
+            <!-- Container do formulário de contato -->
+            <div class="contact-form-wrapper">
+                <h1>Contate-nos</h1>
+
+                <!-- Formulário de contato com ID para manipulação via JavaScript -->
+                <form class="form" id="contact-form">
+
+                    <!-- Área que agrupa todos os campos de entrada -->
+                    <div class="form-inputs-area">
+
+                        <!-- Campo para o nome -->
+                        <div class="input-area">
+                            <label for="name-input">Nome</label>
+                            <input name="name" type="text" class="form-input" id="name-input">
+                        </div>
+
+                        <!-- Campo para o e-mail -->
+                        <div class="input-area">
+                            <label for="email-input">E-mail</label>
+                            <input name="email" type="email" class="form-input" id="email-input">
+                        </div>
+
+                        <!-- Campo para a mensagem -->
+                        <div class="input-area">
+                            <label for="message-input">Mensagem</label>
+                            <textarea name="message" class="form-input" rows="6" id="message-input"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Área do botão de envio -->
+                    <div class="center-flex">
+                        <button type="submit" class="form-button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
